@@ -1,0 +1,100 @@
+.main-card--cointainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 500px));
+    grid-gap: 1rem;
+    justify-content: space-around;
+}
+
+@media (max-width: 998px) {
+  .main-card--cointainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    grid-gap: 50px;
+    justify-content: space-around;
+  }
+}
+
+
+/* end Grid */
+
+/* Card css */
+.card{
+    background-color: #fff;
+    box-shadow: 0 5px 6px -6px #777;
+    border-radius: 12px;
+}
+
+/* Start of Image */
+.object-fit-wrapper{
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    position: relative;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+}
+.object-fit-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Card css */
+.card-number {
+  margin-top: 15px;
+}
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+} 
+
+.main-header{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #731314;
+    line-height: 60px;
+}
+
+.card-description{
+    font-size: .9rem;
+    line-height: 22px;
+}
+
+
+
+
+/* Card Button */
+.btn-primary{
+    border: none;
+    background: linear-gradient(90deg,#94571D 50%,#731314 0) 
+    var(--_p,100%)/200% no-repeat;
+    transition: .4s;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    border-radius: 0 0 12px 12px;
+    
+}
+
+
+.btn-primary:hover{
+    --_p: 0%;
+}
