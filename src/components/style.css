@@ -98,3 +98,30 @@
 .btn-primary:hover{
     --_p: 0%;
 }
+
+
+/* ---------- Button styles ------------------ */
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.btn-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.btn-group-item{
+  border: 1px solid #731314;
+  background: none;
+  padding: 10px 40px;
+  color: #731314;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
